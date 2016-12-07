@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.acer.run_gps"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppThemeWithoutActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.ActivitiesActivity"
+            android:parentActivityName="com.acer.run_gps.gui.activities.MainActivity"
+            android:theme="@style/AppThemeWithActionBar"></activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.SaveActivityActivity"
+            android:label="@string/save_activity"
+            android:theme="@style/AppThemeWithActionBar"></activity>
+
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.MapsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:parentActivityName="com.acer.run_gps.gui.activities.ActivitiesActivity"
+            android:theme="@style/AppThemeWithActionBar"></activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName="com.acer.run_gps.gui.activities.MainActivity"
+            android:theme="@style/AppThemeWithActionBar"></activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName="com.acer.run_gps.gui.activities.MainActivity"
+            android:theme="@style/AppThemeWithActionBar"></activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.PrivacyPolicy"
+            android:label=""
+            android:parentActivityName="com.acer.run_gps.gui.activities.AboutActivity"
+            android:theme="@style/AppThemeWithActionBar"></activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.LibrariesActivity"
+            android:label="@string/libraries"
+            android:parentActivityName="com.acer.run_gps.gui.activities.AboutActivity"
+            android:theme="@style/AppThemeMinWidth"></activity>
+
+        <activity
+            android:name="com.acer.run_gps.gui.activities.CreditsActivity"
+            android:label="@string/credits"
+            android:parentActivityName="com.acer.run_gps.gui.activities.AboutActivity"
+            android:theme="@style/AppThemeMinWidth"></activity>
+
+        <service
+            android:name="com.acer.run_gps.gui.services.CloseService"
+            android:stopWithTask="false">
+        </service>
+    </application>
+</manifest>

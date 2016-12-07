@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Runnergy</string>
+
+    <!-- MainActivity.java -->
+    <string name="dialog_title">Berechtigungen anfordern</string>
+    <string name="dialog_message">Diese App benötigt Zugriff auf GPS um deine Route
+        während einer Aktivität zu tracken</string>
+
+    <!-- ActivityFragment.java -->
+    <string name="activity_fragment_start">Aktivität starten</string>
+    <string name="activity_fragment_stop">Aktivität beenden</string>
+    <string name="activity_fragment_pause">Aktivität pausieren</string>
+    <string name="activity_fragment_resume">Aktivität fortsetzen</string>
+    <string name="activity_fragment_no_coordinates">In dieser Aktivität wurden kein Koordinaten
+        gefunden</string>
+    <string name="activity_fragment_duration_too_short">Die Dauer dieser Aktivität ist zu
+        kurz</string>
+    <string name="activity_fragment_notification_going_on">Aktivität wird ausgeführt</string>
+    <string name="activity_fragment_notification_pause">Aktivität wird pausiert</string>
+     <string name="activity_fragment_distance_too_short">Die Distanz der Aktivität ist zu
+         kurz</string>
+
+    <!-- TrackFragment.java + ActivitiesActivity.java -->
+    <string name="select">\u0020ausgewählt</string>
+    <string name="dialog_delete_track_title">Strecke löschen</string>
+    <string name="dialog_delete_track_message">Willst du die ausgewählten Strecken wirklich löschen?
+    </string>
+
+    <!-- TracksFragment.java -->
+    <string name="tracks_empty">Keine Strecken vorhanden</string>
+
+    <!-- TrackAdapter.java -->
+    <string name="track_adapter_singular">\u0020Aktivität</string>
+    <string name="track_adapter_plural">\u0020Aktivitäten</string>
+
+    <!-- ActivitiesActivity.java -->
+    <string name="dialog_delete_activity_message">Willst du die ausgewählten Aktivitäten wirklich
+        löschen?</string>
+    <string name="activities_empty">Keine Aktivitäten in dieser Strecke</string>
+
+    <!-- MapsActivity.java -->
+    <string name="maps_activity_start">Vergleich starten</string>
+    <string name="maps_activity_stop">Vergleich stoppen</string>
+    <string name="marker_start">Start</string>
+    <string name="marker_end">Ende</string>
+    <string name="dialog_bad_accuracy_title">Schlechtes GPS Signal</string>
+    <string name="dialog_bad_accuracy_message">Die Qualität des GPS Signals ist schwach. Wir
+        empfehlen dir, dich unter freiem Himmel aufzuhalten. Setze den Standortmodus in den
+        Einstellungen deines Gerätes auf \'Hohe Genauigkeit\'. Wenn nicht, könnte deine
+        aufgezeichnete Aktivität ungenau sein. Möchtest du trotzdem fortfahren?</string>
+    <string name="dialog_go_back">Willst du den Vergleich wirklich abbrechen?</string>
+    <string name="finished">Vergleich beendet</string>
+    <string name="not_connected">Du bist nicht mit den Play Services verbunden</string>
+    <string name="dialog_no_location_title">Position ist unbekannt</string>
+    <string name="dialog_no_location_message">Wir können deine aktuelle Position nicht ermitteln.
+        Wir empfehlen dir, dich unter freiem Himmel aufzuhalten oder das Internet zu aktivieren.
+        Bitte versuche es später erneut
+        .</string>
+
+    <!-- LocationListenerCompare.java -->
+    <string name="faster">\u0020langsamer</string>
+    <string name="slower">\u0020schneller</string>
+    <string name="equally">Du bist gleich schnell</string>
+
+    <!-- SaveActivityActivity.java -->
+    <string name="save_activity">Aktivität speichern</string>
+    <string name="dialog_back_pressed_title">Aktivität löschen</string>
+    <string name="dialog_back_pressed_subtitle">Willst du wirklich zurückkehren? Deine
+        Aktivität wird gelöscht.</string>
+
+    <!-- ActivityTypes.java -->
+    <string name="running">LAUFEN</string>
+    <string name="walking">GEHEN</string>
+    <string name="trekking">WANDERN</string>
+    <string name="cycling">RAD FAHREN</string>
+    <string name="skiing">SKIFAHREN</string>
+    <string name="other">ANDERE</string>
+
+    <!-- AddTrackDialogFactory.java -->
+    <string name="dialog_add_track_title">Strecke hinzufügen</string>
+    <string name="dialog_error_no_name">Name ist nicht gesetzt</string>
+    <string name="dialog_error_already_exists">Strecke bereits vorhanden</string>
+
+    <!-- ChangeTrackDialogFactory.java -->
+    <string name="dialog_change_track_title">Strecke ändern</string>
+
+    <!-- AboutActivity.java -->
+    <string name="email">Bitte schreibe eine E-Mail an fabian.feichter@ffeichta.com</string>
+
+    <!-- activity_item.xml -->
+    <string name="track_title">Strecke</string>
+    <string name="type_title">Typ</string>
+
+    <!-- activity_item.xml + save_activity_activity.xml -->
+    <string name="distance_title">Distanz</string>
+    <string name="avg_title">Durchschnitt</string>
+    <string name="duration_title">Dauer</string>
+    <string name="date_title">Datum</string>
+
+    <!-- add_change_track_dialog.xml -->
+    <string name="dialog_track_subtitle">Bitte gib den Namen der Strecke ein</string>
+
+    <!-- preferences.xml -->
+    // General
+    <string name="category_general_title">Allgemein</string>
+    <string name="category_general_unit_title">Längeneinheit</string>
+    <string name="category_general_date_title">Datumsformat</string>
+    // Activity
+    <string name="category_activity_title">Aktivität</string>
+    <string name="category_activity_interval_title">Intervall in denen Koordinaten
+        gespeichert werden</string>
+    // Map
+    <string name="category_map_title">Karte</string>
+    <string name="category_map_type_title">Typ der Karte</string>
+
+    <!-- about_activity.xml -->
+    <string name="developer">Fabian Feichter</string>
+    <string name="school">TFO \'Max Valier\'</string>
+    <string name="libraries">Bibliotheken</string>
+    <string name="source_code">Quellcode</string>
+    <string name="privacy_policy">Datenschutzerklärung</string>
+    <string name="credits">Credits</string>
+    <string name="report_bug">Melde einen Fehler</string>
+    <string name="rate_this_app">Bewerte diese App</string>
+
+    <!-- main_menu.xml + AndroidManifest.xml -->
+    <string name="settings">Einstellungen</string>
+    <string name="about">Über</string>
+
+    <!-- request_permission_activity.xml-->
+    <string name="request_permission">Berechtigung anfordern</string>
+    <string name="sorry">Diese APP benötigt Zugriff auf GPS um deine Route
+        während einer Aktivität zu tracken</string>
+
+    <!-- arrays.xml -->
+    <string name="activity">Aktivität</string>
+    <string name="tracks">Strecken</string>
+
+    <!-- Toasts -->
+    <string name="toast_enable_gps">Bitte aktiviere GPS</string>
+    <string name="toast_wait">Warte einen Moment...</string>
+    <string name="toast_connection_lost">Die Verbindung zu Play Services wurde beendet mit
+        der Fehlernummer\u0020</string>
+    <string name="toast_connection_failed">Verbindung zu Play Services fehlgeschlagen</string>
+    <string name="toast_error_save_track">Beim Einfügen der Aktivität ist ein Fehler
+        aufgetreten</string>
+    <string name="toast_delete_activity_error">Aktivität konnte nicht gelöscht werden</string>
+    <string name="toast_delete_track_error">Strecke konnte nicht gelöscht werden</string>
+    <string name="toast_save_no_track_error">Bitte gib eine Strecke an</string>
+    <string name="toast_not_at_start">Geh bitte an den Startpunkt</string>
+    <string name="toast_shutdown">Du kannst die App nicht von hier aus beenden. Benutze
+        stattdessen den \"Recents\" Button</string>
+</resources>
